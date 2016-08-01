@@ -18,22 +18,56 @@
 // if (age >= 18)
 // {console.log("Yes you can drive"); console.log("Drive Safe!"); console.log("Don't drink and drive")}
 
-var age = 23;
-if (age < 16){
-  console.log("you cannot do much outside of school")
-} else if (age >= 16 && age < 18){
-  console.log("you can drive!");
-} else if (age >= 18 && age < 21){
-  console.log("you can vote");
-} else if (age >= 21 && age < 25){
-  console.log("you can drink alcohol");
-} else if (age >= 25 && age < 35){
-  console.log("you can rent a car");
-} else if (age >= 35 && age <62){
-  console.log("you can run for president");
-} else if (age >62){
-  console.log("you can collect social security benefits");
-};
+// var age = 23;
+// if (age < 16){
+//   console.log("you cannot do much outside of school")
+// } else if (age >= 16 && age < 18){
+//   console.log("you can drive!");
+// } else if (age >= 18 && age < 21){
+//   console.log("you can vote");
+// } else if (age >= 21 && age < 25){
+//   console.log("you can drink alcohol");
+// } else if (age >= 25 && age < 35){
+//   console.log("you can rent a car");
+// } else if (age >= 35 && age <62){
+//   console.log("you can run for president");
+// } else if (age >62){
+//   console.log("you can collect social security benefits");
+// };
+
+// var grade = "F";
+// if (grade === "A"){
+//   console.log("Great Job!");
+// } else if (grade === "B"){
+//   console.log("Good Job");
+// } else if (grade === "C"){
+//   console.log("Okay job");
+// } else if (grade === "D"){
+//   console.log("Not so good job");
+// } else if (grade === "F"){
+//   console.log("Bad job.");
+// };
+
+var grade = "D";
+switch (grade) {
+  case "A":
+    console.log("Great job!");
+    break;
+  case "B":
+    console.log("good job");
+    break;
+  case "C":
+    console.log("okay job");
+    break;
+  case "D":
+    console.log("not so good job");
+    break;
+  case "F":
+    console.log("Bad job");
+    break;
+  default:
+    console.log("unexpected greade value entered");
+}
 
 </script>
 
