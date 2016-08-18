@@ -250,24 +250,46 @@
 //   }
 // };
 
-for (var num = 99; num >= 1; num--) {
-  while (num > 2) {
+// for (var num = 5; num >= 1; num--) {
+// 	//num = 4
+// 	if (num > 1) {
+//
+// 		if (num < 5) {
+// 			console.log('Take one down and pass it around, ' + num +  ' bottles of beer on the wall.');
+// 		}
+//       console.log(num + ' bottles of beer on the wall, ' +  num + ' bottles of beer.');
+//
+// 	} else {
+// 		console.log(num + ' bottle of beer on the wall, ' +  num + ' bottle of beer.');
+// 		console.log('Take one down and pass it around, ' + num +  ' bottle of beer on the wall.');
+// 	}
+//
+//
+// }
+
+//
+for (var num = 5; num >= 1; num--) {
+  if (num > 1) {
   console.log(num+" bottles of beer on the wall, "+num+" bottles of beer.");
-  num = num -1;
-  console.log("Take one down and pass it around, "+num+" bottles of beer on the wall.");
-  console.log(num+" bottles of beer on the wall, "+num+" bottles of beer.");
-  num = num -1;
-  console.log("Take one down and pass it around, "+num+" bottles of beer on the wall.");
-  }
-  while (num === 2) {
-  console.log("")
-  }
-  while (num === 1) {
-  console.log(num+" bottle of beer on the wall, "+num+" bottle of beer.");
-  num = num -1;
-  console.log("Take one down and pass it around, "+num+" bottles of beer on the wall.");
+  console.log("Take one down and pass it around, "+ (num - 1) +" bottles of beer on the wall.");
+  // console.log(num+" bottles of beer on the wall, "+num+" bottles of beer.");
+  // num = num -1;
+  // console.log("Take one down and pass it around, "+num+" bottles of beer on the wall.");
   }
 };
+
+  // if (num === 2) {
+  // console.log(num+" bottles of beer on the wall, "+num+" bottles of beer.");
+  // num = num -1;
+  // console.log("Take one down and pass it around, "+num+" bottle of beer on the wall.");
+  // }
+
+  // while (num === 1) {
+  // console.log(num+" bottle of beer on the wall, "+num+" bottle of beer.");
+  // num = num -1;
+  // console.log("Take one down and pass it around, "+num+" bottles of beer on the wall.");
+  // }
+// };
 
 
 </script>
