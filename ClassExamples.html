@@ -251,8 +251,7 @@
 // };
 ////////////////////////////////////////////////////////
 // CLASS 3, HW #1 (SARAH METHOD)
-// for (var num = 99; num >= 1; num--) {
-// 	if (num <= 99) {
+// for (var num = 99; num > 0; num--) {
 // 		if (num === 1) {
 // 			console.log("1 bottle of beer on the wall, 1 bottle of beer.");
 //       console.log("Take one down and pass it around, no more bottles of beer on the wall.");
@@ -262,7 +261,6 @@
 //   		console.log(num + ' bottles of beer on the wall, ' +  num + ' bottles of beer.');
 //   		console.log('Take one down and pass it around, ' + (num-1) +  ' bottles of beer on the wall.');
 //     }
-//   }
 // };
 
 ////////////////////////////////////////////////////////
@@ -280,6 +278,24 @@
 //   console.log("Go to the store and buy some more, 99 bottles of beer on the wall.");
 //   }
 // };
+
+//////////////////////////////////////////////////////
+CLASS 3, HW #2 (KEVIN METHOD)
+var streetNum = [123,142,5629];
+var streetName = ["Newhall St.","Peterson Ave.","Central Blvd."];
+var cityName = ["Alameda","San Francisco","San Jose"];
+var stateName = ["California","Washington","Arizona"];
+var zipCode = [95128,95304,94041];
+
+var num = streetNum[Math.floor(Math.random() * streetNum.length)];
+var street = streetName[Math.floor(Math.random() * streetName.length)];
+var city = cityName[Math.floor(Math.random() * cityName.length)];
+var state = stateName[Math.floor(Math.random() * stateName.length)];
+var zip = zipCode[Math.floor(Math.random() * zipCode.length)];
+
+console.log(num + " " + street + "\n" +
+            city + ", " + state + " " + zip);
+
 
 
 
