@@ -279,6 +279,7 @@
 //   }
 // };
 
+
 //////////////////////////////////////////////////////
 CLASS 3, HW #2 (KEVIN METHOD)
 var streetNum = [123,142,5629];
@@ -295,6 +296,267 @@ var zip = zipCode[Math.floor(Math.random() * zipCode.length)];
 
 console.log(num + " " + street + "\n" +
             city + ", " + state + " " + zip);
+
+////////////////////////////////////////////////////////
+// CLASS 3, HW #2 (KEVIN METHOD)
+// var streetNum = [123,142,509];
+// var streetName = ["Newhall Street","Peterson Ave","Central Blvd"];
+// var cityName = ["Alameda","San Francisco","San Jose"];
+// var stateName = ["CA","WA","AZ"];
+// var zipCode = [95128,95304,94041];
+//
+// var number = streetNum[Math.floor(Math.random() * streetNum.length)];
+// var street = streetName[Math.floor(Math.random() * streetNum.length)];
+// var city = cityName[Math.floor(Math.random() * cityName.length)];
+// var state = stateName[Math.floor(Math.random() * stateName.length)];
+// var zip = zipCode[Math.floor(Math.random() * zipCode.length)];
+//
+// console.log(number + " " + street + ", " + city + " " + state + ", " + zip);
+
+
+////////////////////////////////////////////////////////
+// Random Array practice
+// var carColor = ["Gun-Metal","Red","White"];
+// var doorNum = ["Two-Door","Four-Door","Doorless"];
+// var carType = ["Sedan","SUV","Mini-Van","Truck"];
+// var accessories = ["Baby seat","bumber sticker","Bike rack"];
+//
+// var color = carColor[Math.floor(Math.random() * carColor.length)];
+// var doors = doorNum[Math.floor(Math.random() * doorNum.length)];
+// var type = carType[Math.floor(Math.random() * carType.length)];
+// var extras = accessories[Math.floor(Math.random() * accessories.length)];
+//
+// console.log("We're buying a " + doors + " " + color + ", " + type + " with a " + extras + ".");
+
+
+// functions
+// function declaration
+// run();   //Can call the function above or below the function
+//
+// function run(){
+//   alert("Function Declaration");
+// }
+
+// function speak(){
+//   alert("Hello world!");
+// }
+// speak();
+// function expression
+// var mouse = function(){
+//   alert("function expression");
+// }
+//
+// mouse();
+
+// var keyboard = function(){
+//   alert("function expression 1");
+// }
+// keyboard();
+
+// var sticker = function(){
+//   alert("function expression 2");
+// }
+// sticker();
+
+// var panels = function(){
+//   alert("function expression 3");
+// }
+// panels();
+
+// function pepsi(){
+//   alert("function declaration 1");
+// }
+// pepsi();
+
+// function acto(){
+//   alert("function declaration 2");
+// }
+// acto();
+
+// function BMW(){
+//   alert("Function Declaration 3");
+// }
+// BMW();
+
+// function example1 (parameters){
+//   statements to execute;
+// }
+// example1(arguments);
+
+// function example2(parameters){
+//   statements to execute end in semi-colon;
+// }
+// example2(arguments);
+
+// var pen = function(parameter){
+//   statements of code to execute, end with semi-colon;
+// }
+// pen(arguments);
+
+// function speak(name,word){
+//   alert(name + " is super " + word + "!");
+// }
+// speak("Kevin","awesome");
+// speak("Marlene","pretty");
+
+// function robot(name,stuff){
+//   console.log(name + " loves " + stuff);
+// }
+// robot("Kevin","ice-cream");
+// robot("Marlene","cats");
+
+// function math(x,y,z){
+//   alert(x + " plus " + y + " plus " + z + " = " +(x+y+z));
+// }
+//
+// math(1,2,3);
+
+// returning a functions value into a variable
+// function sum(x,y){
+//   return x+y;
+// }
+// var z = sum(3,4);
+// console.log(z);
+
+// function sum(x,y){
+//   return x+y;
+// }
+//
+// function double(z){
+//   return z*2;
+// }
+//
+// var num = sum(3,4);
+// // console.log(num);
+//
+// var numDlb = double(sum(3,4));
+// console.log(numDlb);
+
+// function speak (words) {
+//   return words;
+//
+//   // The following statements will not run:
+//   var x = 1;
+//   var y = 2;
+//   console.log(x + y)
+// }
+//
+// speak();
+
+// var globalScope = "declared variable outside of a function";
+//
+// function localScope(){
+//   console.log("declared variables inside of a function");
+// }
+//
+// localScope();
+
+// var a = "Hello";
+//
+// function myFunction(){
+//   alert(a + " Javascript!");
+// }
+//  myFunction();
+
+// var a = 1;                    global variable
+
+// function getScore(){          function declaration
+  // var b = 2;                  variable b with value 2
+  // var c = 3;
+
+  // function add(){             nested function declaration
+  // console.log(a + b + c);
+  // }
+
+  // return add();               end function
+// }
+
+// getScore();
+
+// var a = "fly";
+//
+// function house (){
+//   b = "buzzing";
+//   c = "bothering";
+//
+//   function party(){
+//   d = "everyone";
+//   console.log("A " + a + " is " + b + " around " + c + " " + d + "!");
+//   }
+//   return party();
+// }
+// house();
+//
+// var a = "cleaned house";
+// var c = "nap";
+// function fresh(){
+//   b = "haircut";
+//
+//     function values(){
+//       d = "respectful";
+//       console.log("Today I took a " + c + " then got a fresh " + b + " and was very " + d + " to everyone!")
+//       }
+//       return values();
+//   };
+//
+// fresh();
+
+// var badUncle = "Ice";
+// var d = "provide";
+//
+// function mantra(){
+//   var important = "family";
+//
+//   function badWord(){
+//     var sWord = "shit";
+//     var fWord = "Fuck";
+//     console.log(fWord + " " + badUncle + ". Real men work hard and " + d + " for their family. " + badUncle + " don't do that " + sWord + ", B.");
+//   }
+//   return badWord();
+// }
+//
+// mantra();
+//
+// var a = "Workedout";
+//
+// function morning(day){
+//   var b = "finished a book";
+//   var c = "studying programming!";
+//   console.log(day + " morning, has been super productive! I " + a + ", " + b + " and now am " + c)
+// }
+//
+// morning("Sunday");
+
+// var order = "hot chocolate";
+//
+// switch (order) {
+//   case "latte":
+//     console.log("Steamed milk with an espresso shot");
+//     break;
+//   case "americano":
+//   console.log("Espresso with hot water");
+//     break;
+//   case "espresso":
+//     console.log("Espresso, neat");
+//     break;
+//   default:
+//     console.log("That is not a coffee order.");
+//
+// }
+
+// var countDown = [1,2,3,4,5];      //array values
+// for (var i = 0; i <= 5; i++) {    //for loop(starting variable, ending variable, incrumentation)
+//   console.log(countDown[i]);      //show in browser(array(variable))
+// };
+
+//
+// for (var num = 5; num > 0; num--) {               //for loop(starting variable; ending value; incrumentation)
+//   if (num > 1) {                                  //if statement (if true) - execute code/ statements
+//   console.log(num + " bottles of beer!");         //code/ statements
+// } else {                                          //else statement
+//   console.log("1 bottle of beer on the wall");    //ELSE run this block of code/ statements
+//   }
+// };
 
 
 
