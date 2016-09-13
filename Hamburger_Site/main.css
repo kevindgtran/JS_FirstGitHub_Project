@@ -4,6 +4,9 @@ h1{
   color: grey;
   font-weight: 400;
 }
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 /*-----------------------------------------*/
 
 ul a:hover{
@@ -28,7 +31,7 @@ nav li: last-child {
 .hamburger{
   cursor: pointer;  /*Makes this a button upon screen max width*/
   padding: 15px;    /*Puts 15px around entire div class*/
-  display: block;
+  display: block;   /*Puts the elements on top of one another like a block of bricks*/
 }
 
 .line{
@@ -37,7 +40,16 @@ nav li: last-child {
   margin-bottom:6px;              /*margin beneath each line*/
 }
 
-.line:last-child {
+.line:last-child{
   margin-bottom: 0;
 }
+
+nav li{
+  width: 100%;
+}
+
+.menu{
+  display: none;
+}
+
 }
