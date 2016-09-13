@@ -1,0 +1,43 @@
+h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: grey;
+  font-weight: 400;
+}
+/*-----------------------------------------*/
+
+ul a:hover{
+  background: #eee;  /*when cursor hovers makes elements background grey*/
+}
+
+nav li {
+  float:left;                    /*floats the previous li element to the its left*/
+  width: 18%;                    /*width of each li element to 18% of the page width*/
+  border-right: 1px solid #ddd;  /*adds border to right of thin solid grey line*/
+}
+
+nav li: last-child {
+  border-right: none;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 480px) {   /*Only appear when screen's max width is 480px*/
+
+.hamburger{
+  cursor: pointer;  /*Makes this a button upon screen max width*/
+  padding: 15px;    /*Puts 15px around entire div class*/
+  display: block;
+}
+
+.line{
+  border-bottom: 4px solid #bbb;  /*each line formatting*/
+  width: 35px;                    /*width*/
+  margin-bottom:6px;              /*margin beneath each line*/
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+}
