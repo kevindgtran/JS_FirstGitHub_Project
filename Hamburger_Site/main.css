@@ -1,58 +1,92 @@
-h1{
-  font-family: 'Roboto', sans-serif;
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 1em 'Roboto', sans-serif;
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 30px 0;
+  font: 1.5em 'Open Sans', sans-serif;
   text-align: center;
-  color: grey;
-  font-weight: 400;
 }
 
-li a{
-  font-family: 'Open Sans', sans-serif;
-  
+nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
 }
 
-/*-----------------------------------------*/
+ul a {
+  display: block;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #aaa;
+  text-decoration: none;
+}
 
-ul a:hover{
-  background: #eee;  /*when cursor hovers makes elements background grey*/
+ul a:hover {
+  background: #eee;
 }
 
 nav li {
-  float:left;                    /*floats the previous li element to the its left*/
-  width: 18%;                    /*width of each li element to 18% of the page width*/
-  border-right: 1px solid #ddd;  /*adds border to right of thin solid grey line*/
+  float: left;
+  width: 20%;
+  border-right: 1px solid #ddd;
 }
 
-nav li: last-child {
+nav li:last-child {
   border-right: none;
 }
 
 
-/* Media Query */
+/*---------------------------------------------------------
+  M E D I A   Q U E R I E S
+----------------------------------------------------------- */
 
-@media only screen and (max-width: 480px) {   /*Only appear when screen's max width is 480px*/
+@media only screen and (max-width: 480px) {
 
-.hamburger{
-  cursor: pointer;  /*Makes this a button upon screen max width*/
-  padding: 15px;    /*Puts 15px around entire div class*/
-  display: block;   /*Puts the elements on top of one another like a block of bricks*/
-}
+  .hamburger {
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+  }
 
-.line{
-  border-bottom: 4px solid #bbb;  /*each line formatting*/
-  width: 35px;                    /*width*/
-  margin-bottom:6px;              /*margin beneath each line*/
-}
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
 
-.line:last-child{
-  margin-bottom: 0;
-}
+  .line:last-child {
+    margin-bottom: 0;
+  }
 
-nav li{
-  width: 100%;
-}
-
-.menu{
-display: none;
-}
+  /* Our styles here */
 
 }
