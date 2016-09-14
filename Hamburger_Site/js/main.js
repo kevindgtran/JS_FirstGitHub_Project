@@ -1,6 +1,6 @@
-// listen for user click on hamburger
-$(".hamburger").on("click", function () {
-  // if menu is closed then slide down
-  // if menu is open then slide up
-  $(".menu").slideToggle();
+$('.hamburger').on('click', function(e) {
+  // Prevent link from jumping to the top of the page
+  e.preventDefault();
+  // If menu is already showing, slide it up. Otherwise, slide it down.
+  $('.menu').toggleClass('slide-down');
 });
