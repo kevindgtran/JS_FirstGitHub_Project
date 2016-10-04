@@ -784,7 +784,7 @@
 //   console.log(response[i]);
 // };
 
-//Build a program that asks the user for 2 numbers and calculates their multiplication
+// Build a program that asks the user for 2 numbers and calculates their multiplication
 // function add(){
 //   var response1 = prompt("Enter a number");
 //   var response2 = prompt("Enter another number");
@@ -931,6 +931,42 @@
 //   alert("The 3 things to remember about scope.\n\n1. A variables scope depends on where it is declared.\n\n2. Variables declared within a function are local to that function. \n\n3. Variables declared within a loop are local to that loop.");
 // };
 // scope();
+
+// Build a program that asks the user for 2 numbers and calculates their multiplication
+// function add(){
+//   var response1 = prompt("Enter a number");
+//   var response2 = prompt("Enter another number");
+//   var answer = response1 * response2;
+//   alert(response1 + " times " + response2 + " equals " + answer);
+// };
+// add();
+
+
+//build a program that asks the user for 3 values and tells them the sum
+function add(){
+//ask user for 3 values - will return inputs in string form
+var num1 = prompt("Please enter 1st number ");
+var num2 = prompt("Now enter 2nd number ");
+var num3 = prompt("Lastly enter the 3rd number ");
+
+//converting string inputs to integers by parsing
+num1 = parseInt(num1);
+num2 = parseInt(num2);
+num3 = parseInt(num3);
+
+//adding up inputs to sum variable
+var sum = (num1 + num2 + num3);
+
+//alerting user of their total
+alert("You're total is " + sum);
+};
+
+//running add function
+add();
+
+
+
+
 
 </script>
 
