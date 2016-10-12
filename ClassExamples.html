@@ -678,7 +678,11 @@
 //     alert("You picked a number outside of 1-10");
 // };
 
+
 // var temp = prompt("Please enter temperature in ferenheight");
+//
+// //converting user input which is a string into a integer
+// temp = parseFloat(temp);
 // var c = Math.floor(5/9 * (temp - 32.0));
 // alert(temp + " degrees ferenheight is " + c + " degrees celcius");
 
@@ -942,28 +946,121 @@
 // add();
 
 
-//build a program that asks the user for 3 values and tells them the sum
-function add(){
-//ask user for 3 values - will return inputs in string form
-var num1 = prompt("Please enter 1st number ");
-var num2 = prompt("Now enter 2nd number ");
-var num3 = prompt("Lastly enter the 3rd number ");
+// //build a program that asks the user for 3 values and tells them the sum
+// function add(){
+// //ask user for 3 values - will return inputs in string form
+// var num1 = prompt("Please enter 1st number ");
+// var num2 = prompt("Now enter 2nd number ");
+// var num3 = prompt("Lastly enter the 3rd number ");
+//
+// //converting string inputs to integers by parsing
+// num1 = parseInt(num1);
+// num2 = parseInt(num2);
+// num3 = parseInt(num3);
+//
+// //adding up inputs to sum variable
+// var sum = (num1 + num2 + num3);
+//
+// //alerting user of their total
+// alert("You're total is " + sum);
+// };
+//
+// //running add function
+// add();
 
-//converting string inputs to integers by parsing
-num1 = parseInt(num1);
-num2 = parseInt(num2);
-num3 = parseInt(num3);
+//build a program that asks the user for their name and states it one character at a time
+// function nameLetters(){
+//   var name = prompt("What is your name?");
+//     //Interate over each element of the name variable and alert its value in the string
+//     for (var i = 0; i < name.length; i++) {
+//     alert(name[i]);
+//     };
+// };
 
-//adding up inputs to sum variable
-var sum = (num1 + num2 + num3);
+// nameLetters();
 
-//alerting user of their total
-alert("You're total is " + sum);
-};
+//Add all the numbers in an array
+// var arr = [1,2,3,4,10,11];
+// var sum = 0;
+// for (var i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+// console.log(sum);
 
-//running add function
-add();
 
+//build a program that adds up all the values in an array
+// var yearsExperience = [2,4,5,7];
+// var sum = 0;
+// for (var i = 0; i < yearsExperience.length; i++) {
+//   sum += yearsExperience[i]
+// };
+// console.log(sum);
+
+//build a program that asks the user for 3 of their co-workers years of experience and adds it all up
+// function yearsExperience(){
+// //ask the user for 3 of their coworkers years of experience, save in variable
+// var coWorker1 = prompt("How many years of experience does team member 1 have?");
+// var coWorker2 = prompt("How many years of experience does team member 2 have?");
+// var coWorker3 = prompt("How many years of experience does team member 3 have?");
+// //parse each of the users inputs from string to integers to perform mathematical calculations
+// var coWorker1 = parseInt(coWorker1);
+// var coWorker2 = parseInt(coWorker2);
+// var coWorker3 = parseInt(coWorker3);
+// //add up the coworkers years of experience into sum variable
+// var sum = (coWorker1 + coWorker2 + coWorker3);
+// //tell the user how many years of experience that is
+// alert("Your coworkers have a combined " + sum + " years of experience!");
+// };
+// yearsExperience();
+
+//build a program that outputs the sum of an array
+// var candy = [2,4,5,7,9,10];
+// var candySum = 0;
+//
+// for (var i = 0; i < candy.length; i++) {
+//   candySum += candy[i];
+// };
+// console.log(candySum);
+
+//build a program that adds up an array of values
+// function add(){
+//   var numList = [2,4,7,20];
+//   //set sum variable to 0
+//   var sum = 0;
+//     //construct for loop to iterate over each element of the array
+//     for (var i = 0; i < numList.length; i++) {
+//     sum += numList[i];
+//     };
+//     alert(sum);
+//     };
+// add();
+
+// //build a program that seperates an arrays elements with commas
+// var phrase = "How are you doing today?";
+// //use split() method to split the string into substrings, only showing the first 3 substrings
+// var slow = phrase.split(" ",3);
+// console.log(slow);
+
+//hackerrank problem
+// function rotate( array , times ){
+//   while( times-- ){
+//     var temp = array.shift();
+//     array.push( temp )
+//   }
+// }
+//
+// var numbers = [1,2,3,4,5];
+// rotate( numbers ,4 )
+// console.log( numbers );
+
+// function arrayRotate(arr, count) {
+//   count -= arr.length * Math.floor(count / arr.length)
+//   arr.push.apply(arr, arr.splice(0, count))
+//   return arr
+// }
+//
+// for(let i = 4 ; i <= 4 ; i++)
+//   console.log( arrayRotate( ["1","2","3","4","5"], i).join(''))
 
 
 
